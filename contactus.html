@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-- 3 main links -->
+    <div class="links-layout">
+      <div class="links-item">
+        <a href="home.html"><center>Home</center></a>
+      </div>
+      <div class="links-item">
+        <center>Products and Services</center>
+      </div>
+      <div class="links-item">
+        <a href="contactus.html"><center>Contact Us</center></a>
+      </div>
+    </div>
+
+    <!-- Main 2 Columns -->
+    <div class="column-layout">
+      <div class="big-column">
+        <h2>
+          Location
+        </h2>
+        <br />
+        <p>
+          1234 State Street <br />
+          Doral, Fl 12345
+        </p>
+        <p>
+          <b>Phone:</b> 123-456-7890 <br />
+          <br />
+          <b>Email:</b> sandwich@shop.com
+        </p>
+      </div>
+
+      <div class="small-column">
+        <h2>
+          Hours of Operation
+        </h2>
+        <br />
+        <p>
+          <b>Mon-Fri:</b> 9am - 9pm <br />
+          <b>Sat-Sun:</b> 10am - 11pm
+        </p>
+      </div>
+    </div>
+
+    <form
+      action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample"
+      method="post"
+    >
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">
+            Send your message
+          </button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
